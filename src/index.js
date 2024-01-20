@@ -13,9 +13,12 @@ const port = 3000;
 app.use(morgan("combined"));
 const hbs = create()
 //Template engine
-app.engine("handlebars", hbs.engine);
+app.engine('.hbs', engine({
+  extname: '.hbs'
+}));
+// app.engine("handlebars", hbs.engine);
 // app.set("view engine", "handlebars");
-app.set("view engine", "handlebars");
+app.set("view engine", ".hbs");
 app.set('views', 'src/resources/views')
 
 app.get("/trang-chu", (req, res) => {
