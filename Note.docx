@@ -17,3 +17,5 @@ nodemon:
 Morgan:
     Track changes if there is anything happen (refresh page, server does not receive request from client)
 
+Template engines:
+    Giúp viết html ở các file khác 
