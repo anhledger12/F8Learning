@@ -13,3 +13,7 @@ nodemon:
                     "test": "echo \"Error: no test specified\" && exit 1"
                 }             
 
+
+Morgan:
+    Track changes if there is anything happen (refresh page, server does not receive request from client)
+
